@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-main/static/css/main.08e8ea86.css",
+    "main.js": "/portfolio-main/static/js/main.dbcb00e7.js",
+    "static/media/naija_charades.jpg": "/portfolio-main/static/media/naija_charades.0ceccf8af1fd633c876e.jpg",
+    "static/media/reactNative.png": "/portfolio-main/static/media/reactNative.52920dda6f510e9046e2.png",
+    "static/media/photoshop.png": "/portfolio-main/static/media/photoshop.6649f1dacc3b1d9bde12.png",
+    "static/media/bloxx logo.png": "/portfolio-main/static/media/bloxx logo.f2d99166700728313e9e.png",
+    "static/media/unity.png": "/portfolio-main/static/media/unity.43a9b85934639cd3cbf0.png",
+    "static/media/steadCare.ico": "/portfolio-main/static/media/steadCare.ffe89640c66db33cff97.ico",
+    "index.html": "/portfolio-main/index.html",
+    "main.08e8ea86.css.map": "/portfolio-main/static/css/main.08e8ea86.css.map",
+    "main.dbcb00e7.js.map": "/portfolio-main/static/js/main.dbcb00e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08e8ea86.css",
+    "static/js/main.dbcb00e7.js"
+  ]
+}

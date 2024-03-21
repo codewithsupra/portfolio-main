@@ -17,50 +17,47 @@ export const MobileLoadingScreen = ({
     setRollUp(true);
     setTimeout(() => {
       setStartExperience(true);
-    }, [1000]);
+    }, 1000);
   };
 
   return (
     <Container startExperience={rollUp}>
       <Body>
         <Head>
-          <Heading>Dive into my</Heading>
+          <Heading>Welcome to my World </Heading>
           <br />
           <TypeWriterBody>
             {" "}
             <Heading>
-              {
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Space.",
-                      "World.",
-                      "Story.",
-                      "Reality.",
-                      "Domain.",
-                      "Realm."
-                    ],
-                    autoStart: true,
-                    loop: true
-                  }}
-                />
-              }
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Development",
+                    "Algorithm.",
+                    "Software.",
+                    "Innovation.",
+                    "Solution.",
+                    "Engineering."
+                  ],
+                  autoStart: true,
+                  loop: true
+                }}
+              />
             </Heading>
           </TypeWriterBody>
         </Head>
         <Paragraph>
-          I am Nnaemeka, a Passionate Software Developer with a relentless drive
-          to create captivating and seamless user experiences.
+          "I am Supratim Sarkar, an Innovative Software Architect, sculpting digital wonders with precision and flair."
         </Paragraph>
         <LoadingContainer onClick={progress === 100 ? Explore : null}>
           <TextContainer>
-            <LoadText> {progress < 100 ? "Loading ..." : "Explore"}</LoadText>
+            <LoadText> {progress < 100 ? "Loading ..." : "ENTER NOW"}</LoadText>
             {progress === 100 ? <ExploreLottie /> : null}
           </TextContainer>
           <LoadFiller progress={progress} />
         </LoadingContainer>
         <Beckon show={progress < 100 ? "true" : "false"}>
-          <h3>Please Wait</h3>
+          <h3>Loading....</h3>
           <InfinityLottie />
         </Beckon>
       </Body>
@@ -72,7 +69,9 @@ const Container = styled.div`
   z-index: 100;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
   color: white;
   box-sizing: border-box;
   display: flex;
@@ -95,8 +94,6 @@ const Body = styled.div`
   width: fit-content;
   z-index: 10;
   max-height: fit-content;
-
-  /* background-color: red; */
 `;
 const Head = styled.div`
   margin-bottom: 40px;
@@ -215,3 +212,6 @@ const Beckon = styled.div`
     })}
   }
 `;
+
+export default MobileLoadingScreen;
+

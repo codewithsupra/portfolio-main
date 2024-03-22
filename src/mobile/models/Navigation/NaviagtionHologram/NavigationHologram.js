@@ -42,7 +42,7 @@ export const NavigationHologram = () => {
                 scrollData.el.scrollTop = scrollData.el.scrollTop * 1.7;
               }}
             >
-              <h3>Profile</h3>
+              <h3> My Profile</h3>
             </Item>
             <Item
               onClick={() => {
@@ -63,7 +63,7 @@ export const NavigationHologram = () => {
                 scrollData.el.scrollTop = scrollData.el.scrollTop * 8.3;
               }}
             >
-              <h3>Contacts</h3>
+              <h3>Contact Me</h3>
             </Item>
           </Body>
         </Container>
@@ -80,7 +80,7 @@ const Container = styled.div`
   z-index: 1000;
   width: 15rem;
   height: 15rem;
-  background-color: rgba(51, 181, 229, 0.4);
+  background-color: rgba(92, 192, 192, 0.8); 
   box-sizing: border-box;
   padding: 10px;
   transform-origin: bottom;
@@ -90,11 +90,11 @@ const Container = styled.div`
   border-radius: 8px;
   font-family: "HK Grotesk", sans-serif;
   box-shadow: 0 0 60px 30px rgba(51, 181, 229, 0.2);
-  background-image: url("https://www.freeiconspng.com/thumbs/grid-png/white-grid-png--21.png");
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: grey;
 `;
 const Header = styled.h2`
   color: white;

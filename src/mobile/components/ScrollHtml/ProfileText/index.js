@@ -42,32 +42,26 @@ export const ProfileText = ({ opacity }) => {
     <Container opacity={opacity}>
       <FirstText view={firstTextInView.toString()}>
         <h2>
-          I am Onyeji Nnaemeka, a passionate software developer with a vision
-          for crafting immersive experiences. With my imagination, a flare for
-          creation and coding, I embark on a journey to bring code to life.
+        🚀 Innovative Software Engineer: Welcome to my digital domain! I'm Supratim, a passionate and innovative software engineer dedicated to pushing the boundaries of technology. 
+
+
         </h2>
       </FirstText>
       <SecondText view={SecondTextInView.toString()}>
         <h2>
-          From the interplay of logic and creativity, I forge the digital
-          landscapes of websites, the functionality of apps, and the captivating
-          realms of games. A harmonious blend of technical prowess and boundless
-          imagination defines my approach.
+        🌟 Creative Visionary: Step into my world, where creativity meets technology in perfect harmony. As a creative visionary, I thrive on transforming ideas into immersive digital experiences. Armed with a diverse skill set and a boundless imagination, I craft elegant solutions that captivate users and leave a lasting impression. From crafting captivating websites to developing cutting-edge applications, I strive to deliver projects that not only meet but exceed expectations.
+
+
         </h2>
       </SecondText>
       <ThirdText view={ThirdTextInView.toString()}>
         <h2>
-          Beyond the lines of code, you'll find me immersed in virtual worlds
-          and narratives. Gaming is more than just a hobby; it's an avenue to
-          explore innovation. Movies, books and anime are my windows to
-          inspiration, enriching my creativity.
+        🔍 Problem Solver Extraordinaire: Dive into the realm of possibilities with me, where every challenge is an opportunity for innovation. As a problem solver extraordinaire, I relish in dissecting complex problems and devising elegant solutions. Whether it's debugging code, optimizing performance, or architecting scalable systems, I approach each task with meticulous attention to detail and a passion for excellence.
         </h2>
       </ThirdText>
       <FourthText view={FourthTextInView.toString()}>
         <h2>
-          Join me as we venture through the realms of coding, creation, and
-          endless exploration. Let's turn ideas into reality, one pixel at a
-          time.
+        🌐 Tech Enthusiast & Lifelong Learner:With a solid foundation built upon both undergraduate and Master's degrees, I bring a wealth of technical expertise to the table and always strive to learn and achieve more. Join me on a journey of continuous growth and exploration in the ever-evolving world of technology. As a tech enthusiast and lifelong learner, I am deeply committed to staying abreast of the latest trends and advancements in the industry. From attending workshops and conferences to diving into online courses, I embrace every opportunity to expand my skill set and deepen my expertise, ensuring that I remain at the forefront of innovation.
         </h2>
       </FourthText>
     </Container>

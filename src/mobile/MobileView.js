@@ -46,7 +46,7 @@ export const MobileView = () => {
     ) {
       setCanvasColor("rgb(0,0,0)");
     } else {
-      setCanvasColor("rgb(255,255,255)");
+      setCanvasColor("rgb(192,192,192)");
     }
   }, [mobileNavPosition]);
 

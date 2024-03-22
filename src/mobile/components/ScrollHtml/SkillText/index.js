@@ -10,8 +10,8 @@ import TSLogo from "../../../../images/skillImages/typescript.png";
 import ReactIcon from "../../../../images/skillImages/react.png";
 import ReactNativeIcon from "../../../../images/skillImages/reactNative.png";
 import NextIcon from "../../../../images/skillImages/Next.png";
-import CIcon from "../../../../images/skillImages/C-sharp.png";
-import UnityIcon from "../../../../images/skillImages/unity.png";
+import pyicon from "../../../../images/skillImages/pythonicon.jpeg";
+import aws from "../../../../images/skillImages/aws.png";
 import BlenderIcon from "../../../../images/skillImages/blender.png";
 import PhotoshopIcon from "../../../../images/skillImages/photoshop.png";
 import { tab } from "../../../../deviceStyle";
@@ -37,7 +37,7 @@ export const SkillText = ({ opacity }) => {
   return (
     <Container opacity={opacity}>
       <Intro opacity={introOpacity}>
-        <h2>So what can I do ?</h2>
+        <h1>Take a Look at my Skills below </h1>
       </Intro>
       <Development view={showSkills.toString()}>
         <SkillLoader
@@ -78,17 +78,17 @@ export const SkillText = ({ opacity }) => {
           percent={60}
         />
         <SkillLoader
-          logo={CIcon}
+          logo={pyicon}
           offsetEnter={0.662}
           offsetLeave={0.74}
-          name={"C-Sharp"}
+          name={"Python"}
           percent={50}
         />
         <SkillLoader
-          logo={UnityIcon}
+          logo={aws}
           offsetEnter={0.681}
           offsetLeave={0.76}
-          name={"Unity"}
+          name={"Amazon Web Services"}
           percent={60}
         />
         <SkillLoader
@@ -127,8 +127,8 @@ const Intro = styled.div`
   margin-top: 25vh;
   opacity: ${(props) => props.opacity};
   margin-left: 5vw;
-  h2 {
-    font-size: 24px;
+  h1 {
+    font-size: 40px;
   }
 `;
 const Development = styled.div`

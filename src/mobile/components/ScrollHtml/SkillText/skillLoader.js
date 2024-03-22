@@ -3,17 +3,9 @@ import { useFrame } from "@react-three/fiber";
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { ProgressBar } from "../../progressBar";
 import { LargeScreen, fourK, tab } from "../../../../deviceStyle";
 
-export const SkillLoader = ({
-  name,
-  logo,
-  percent,
-  offsetEnter,
-  offsetLeave,
-  variant
-}) => {
+export const SkillLoader = ({ name, logo, offsetEnter, offsetLeave }) => {
   const scroll = useScroll();
 
   const [showSkill, setShowSkill] = useState(false);
@@ -25,17 +17,13 @@ export const SkillLoader = ({
       setShowSkill(false);
     }
   });
+
   return (
     <Container view={showSkill.toString()}>
-      <TopPart>
+      <IconContainer>
         <Icon src={logo} alt={name} />
-        <Title>{name}</Title>
-      </TopPart>
-      <ProgressBar
-        percent={percent}
-        offsetEnter={offsetEnter}
-        offsetLeave={offsetLeave}
-      />
+      </IconContainer>
+      <Title>{name}</Title>
     </Container>
   );
 };
@@ -51,6 +39,10 @@ const Container = styled.div`
   transition: all ease 0.2s;
   box-sizing: border-box;
   padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: ${(props) =>
     props.view === "true" ? "translateX(0)" : "translateX(100vw)"};
 
@@ -69,37 +61,38 @@ const Container = styled.div`
     padding: "10px 50px"
   })}
 `;
-const TopPart = styled.div`
+
+const IconContainer = styled.div`
   display: flex;
-  width: fit-content;
+  justify-content: center;
   align-items: center;
 `;
+
 const Icon = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: fill;
-  border-radius: 8px;
+  border-radius: 50%;
   ${LargeScreen({
-    height: "50px",
-    width: "50px"
+    height: "80px",
+    width: "80px"
   })}
   ${tab({
-    height: "40px",
-    width: "40px"
+    height: "60px",
+    width: "60px"
   })}
 `;
+
 const Title = styled.h2`
   margin: 0;
   padding: 0;
   color: white;
   font-size: 20px;
-  margin-left: 15px;
+  text-align: center;
   ${tab({
-    marginLeft: "10px",
     fontSize: "20px"
   })}
   ${LargeScreen({
-    marginLeft: "10px",
     fontSize: "24px"
   })}
 `;

@@ -24,48 +24,67 @@ export const ScreenHtml = memo(({ Pos }) => {
     <Container ref={ref} top={scrollPos}>
       <Top>
         <div>
-          <Header>PROJECTS</Header>
+          <Header >MY PROJECTS</Header>
           <ScrollLottie />
         </div>
         <BannerLottie />
       </Top>
       <Body>
         <ProjectItem
-          name={"SteadCare"}
+          name={"SmartImageAI"}
           description={
-            "Steadcare is a website where doctors can provide medical care for patients through video call made with react js"
+            "A full-stack React application leveraging DALL-E for AI-based image generation. Features user authentication, a ranking system based on image creation, and a responsive design. Built with Node.js, Express, and PostgreSQL for robust performance and scalability."
           }
-          link={`http://steadcare.care/`}
+          link={`https://smartimageai.onrender.com/`}
           logo={SC}
         />
         <ProjectItem
-          name={"N.Charades"}
+          name={"FliterAI"}
           description={
-            "Naija Charades is an Android app made with React native and TypeScript, using firebase as the back-end. Made and Published to the Android appstore in 2022"
+            "A Vue.js application that lets users post photos, apply AI-driven filters, enhance images, and directly upload to social media. Features real-time image manipulation, download options, and a responsive design for an engaging user experience."
           }
-          link={`https://play.google.com/store/apps/details?id=com.naija_charades`}
+          link={`https://imagefiltersvue.onrender.com/`}
           logo={NC}
         />
         <ProjectItem
-          name={"BLOXX"}
+          name={"ShopMania"}
           description={
-            "Bloxx is an Android game made with Unity and C# in 2020 and published to the Android Playstore in 2021. No updates have been made since then."
+            "A full-stack e-commerce application built with React, Redux, Firebase, and Stripe API. Features include user authentication, secure payment processing, and responsive UI components."
           }
-          link={`https://play.google.com/store/apps/details?id=com.Meka.Bloxx`}
+          link={`https://clothing-store-u4i8.onrender.com/`}
           logo={Bloxx}
         />
         <ProjectItem
-          name={"Indoor Navigation using AR"}
+          name={"Discord Weather Bot"}
           description={
-            "This is an android Augmented Reality app developed using Unity,Blender and a lidar sensor. Presented as my final project for a B.Eng degree"
+            "A Node.js-based Discord bot providing real-time weather updates via the Weather API. Features include optimized performance, scalable architecture, and interactive commands for an enhanced user experience."
           }
-          link={`https://play.google.com/store/apps/details?id=com.naija_charades`}
+          link={`https://github.com/codewithsupra/discord-bot`}
           variant={true}
+        />
+        
+        
+        <ProjectItem
+          name={"NASA Mission Control Application: Interstellar Launch Management System"}
+
+          description={
+            " Full-stack application built with Node.js, React, and MongoDB to schedule and manage interstellar launches. Features include a responsive UI, RESTful APIs, Docker containerization, and CI/CD pipelines. Ensures scalability and reliability with comprehensive testing and 99.9% uptime. "
+          }
+          variant={true}
+          link={`https://github.com/codewithsupra/nasa-project`}
+        />
+        <ProjectItem
+          name={"ChatBotPro"}
+          description={
+            " Developed a Nuxt.js-based ChatBot with TypeScript, leveraging the OpenAI Assistants API for advanced NLP capabilities. Features include a responsive UI, high accuracy in query resolution, and scalable deployment to handle thousands of users. "
+          }
+          variant={true}
+          
         />
       </Body>
       <Footer>
         <GitLink
-          href="https://github.com/Meka-tech"
+          href="https://github.com/codewithsupra"
           target="_blank"
           rel="noreferrer"
         >

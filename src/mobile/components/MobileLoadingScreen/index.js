@@ -47,7 +47,7 @@ export const MobileLoadingScreen = ({
           </TypeWriterBody>
         </Head>
         <Paragraph>
-          "I am Supratim Sarkar, an Innovative Software Architect, sculpting digital wonders with precision and flair."
+          "I am Supratim Sarkar, an Innovative Software Engineer, sculpting digital wonders with precision and flair."
         </Paragraph>
         <LoadingContainer onClick={progress === 100 ? Explore : null}>
           <TextContainer>

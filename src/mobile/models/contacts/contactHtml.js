@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {
   EmailLottie,
   LinkedLottie,
-  TwitterLottie,
   WhatsappLottie
 } from "./PhoneLottie";
 
@@ -13,7 +12,6 @@ export const ContactHtml = () => {
       <Header>My Socials</Header>
       <SocialMediaGrid>
         <EmailLottie />
-        <TwitterLottie />
         <WhatsappLottie />
         <LinkedLottie />
       </SocialMediaGrid>

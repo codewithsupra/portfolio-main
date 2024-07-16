@@ -1,35 +1,23 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import Email from "../../../lottie/social-media/email.json";
-import Twitter from "../../../lottie/social-media/twitter.json";
+
 import Whatsapp from "../../../lottie/social-media/whatsapp.json";
 import Linked from "../../../lottie/social-media/linkedin.json";
 
 export const EmailLottie = () => {
   return (
-    <a href="mailto:nnaemekaonyeji27@gmail.com">
+    <a href="mailto:supratim347@gmail.com">
       <EmailLottieContainer>
         <Lottie animationData={Email} loop={true} />
       </EmailLottieContainer>
     </a>
   );
 };
-export const TwitterLottie = () => {
-  return (
-    <a
-      href="https://x.com/lastsonofcy?s=21&t=8EAVGsIxgU0ZTKqRWd0z5g"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <TwitterLottieContainer>
-        <Lottie animationData={Twitter} loop={true} />
-      </TwitterLottieContainer>
-    </a>
-  );
-};
+
 export const WhatsappLottie = () => {
   return (
-    <a href="https://wa.me/08152969574" target="_blank" rel="noreferrer">
+    <a href="https://wa.me/0682388288" target="_blank" rel="noreferrer">
       <Lottie animationData={Whatsapp} loop={true} />
       <WhatsappLottieContainer></WhatsappLottieContainer>
     </a>
@@ -38,7 +26,7 @@ export const WhatsappLottie = () => {
 export const LinkedLottie = () => {
   return (
     <a
-      href="https://www.linkedin.com/in/nnaemeka-onyeji-78a141256"
+      href="https://www.linkedin.com/in/supratim-sarkar-3a3299150/"
       target="_blank"
       rel="noreferrer"
     >

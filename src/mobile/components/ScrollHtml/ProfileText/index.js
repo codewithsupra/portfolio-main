@@ -51,14 +51,13 @@ export const ProfileText = ({ opacity }) => {
 
   <SecondText view={SecondTextInView.toString()}>
     <h2 style={{ fontSize: '3.5rem', fontWeight: 'bold' }}>
-      🔍 Problem Solver:
+    💻 My Technical strenghts:
     </h2>
     <p style={{ fontSize: '2.2rem', lineHeight: '1.6' }}>
-      I excel at dissecting complex problems and devising efficient, scalable solutions. My experience includes:
-      <br />
       <ul style={{ fontSize: '2.2rem', lineHeight: '1.6' }}>
-        <li>Debugging and Optimization: Successfully reduced page load times by 50% for a high-traffic website.</li>
-        <li>Scalable System Architecture: Designed and implemented a microservices architecture for a SaaS application, improving reliability and scalability.</li>
+        <li>Innovative Problem-Solving: Proven ability to deliver creative and efficient solutions in fast-paced environments, driving both user satisfaction and business success.</li>
+        <li>Debugging and Optimization: Successfully reduced page load times by 50% for a high-traffic website during my internship at Udaan Society.It resulted in people getting faster and immediate access to Covid helplines.</li>
+        <li>Frontend Development: Passionate about UI/UX. I have good  development experience in HTML, CSS, JS, React,Vue  and NextJS frameworks.</li>
       </ul>
     </p>
   </SecondText>
@@ -78,10 +77,10 @@ export const ProfileText = ({ opacity }) => {
     </h2>
     <ul style={{ fontSize: '2.2rem', lineHeight: '1.6' }}>
       <li>
-        <strong>Prize Winning Developer:</strong> Recognized as the best project at Vrijie University Startup Hub for integrating healthcare with software development and AI.
+        <strong>Prize Winning Developer:</strong> Awarded top honors at Vrijie University Startup Hub for pioneering integration of healthcare with software development and AI.
       </li>
       <li>
-        <strong>Open Source Contributor:</strong> Contributed to several high-profile open-source projects in ZTM and Vue GitHub repositories, enhancing functionality and fixing critical bugs.
+        <strong>Open Source Contributor:</strong> Contributed to several high-profile open-source projects in ZTM and  repositories, enhancing functionality and fixing critical bugs.
       </li>
       <li>
         <strong>Certifications:</strong> Certified in AWS Cloud Practitioner, enhancing my ability to design and deploy scalable cloud solutions.

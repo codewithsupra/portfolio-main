@@ -14,6 +14,9 @@ import pyicon from "../../../../images/skillImages/pythonicon.jpeg";
 import aws from "../../../../images/skillImages/aws.png";
 import BlenderIcon from "../../../../images/skillImages/blender.png";
 import PhotoshopIcon from "../../../../images/skillImages/photoshop.png";
+import go from "../../../../images/skillImages/go.png";
+import sql from "../../../../images/skillImages/download.png";
+import node from "../../../../images/skillImages/node.png"
 import { tab } from "../../../../deviceStyle";
 
 export const SkillText = ({ opacity }) => {
@@ -92,18 +95,26 @@ export const SkillText = ({ opacity }) => {
           percent={60}
         />
         <SkillLoader
-          logo={BlenderIcon}
+          logo={node}
           offsetEnter={0.7}
           offsetLeave={0.78}
-          name={"Blender"}
+          name={"NodeJS"}
           percent={65}
         />
         <SkillLoader
           variant={true}
-          logo={PhotoshopIcon}
+          logo={sql}
           offsetEnter={0.718}
           offsetLeave={0.8}
-          name={"Photoshop"}
+          name={"SQL"}
+          percent={90}
+        />
+        <SkillLoader
+          variant={true}
+          logo={go}
+          offsetEnter={0.718}
+          offsetLeave={0.8}
+          name={"Golang"}
           percent={90}
         />
       </Development>

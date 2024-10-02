@@ -5,6 +5,14 @@ import { ProjectItem } from "./ProjectItem";
 import Bloxx from "../../../../images/projectLogos/bloxx logo.png";
 import NC from "../../../../images/projectLogos/naija_charades.jpg";
 import SC from "../../../../images/projectLogos/steadCare.ico";
+import JS from "../../../../images/projectLogos/js.png";
+import bm from "../../../../images/projectLogos/Belgian-Malinois-dog.webp";
+import store from "../../../../images/projectLogos/store.jpeg";
+import face from "../../../../images/projectLogos/face.png"
+import voice from "../../../../images/projectLogos/voice.png";
+import weather from "../../../../images/projectLogos/weather.jpeg"
+import nasaicon from "../../../../images/projectLogos/download.jpeg";
+import chatbot from "../../../../images/projectLogos/chatbot.jpeg";
 import { useFrame } from "@react-three/fiber";
 import { useEffect } from "react";
 import { useRef } from "react";
@@ -30,58 +38,162 @@ export const ScreenHtml = memo(({ Pos }) => {
         <BannerLottie />
       </Top>
       <Body>
-        <ProjectItem
-          name={"SmartImageAI"}
-          description={
-            "A full-stack React application leveraging DALL-E for AI-based image generation. Features user authentication, a ranking system based on image creation, and a responsive design. Built with Node.js, Express, and PostgreSQL for robust performance and scalability."
-          }
-          link={`https://smartimageai.onrender.com/`}
-          logo={SC}
-        />
-        <ProjectItem
-          name={"FliterAI"}
-          description={
-            "A Vue.js application that lets users post photos, apply AI-driven filters, enhance images, and directly upload to social media. Features real-time image manipulation, download options, and a responsive design for an engaging user experience."
-          }
-          link={`https://imagefiltersvue.onrender.com/`}
-          logo={NC}
-        />
-        <ProjectItem
-          name={"ShopMania"}
-          description={
-            "A full-stack e-commerce application built with React, Redux, Firebase, and Stripe API. Features include user authentication, secure payment processing, and responsive UI components."
-          }
-          link={`https://clothing-store-u4i8.onrender.com/`}
-          logo={Bloxx}
-        />
-        <ProjectItem
-          name={"Discord Weather Bot"}
-          description={
-            "A Node.js-based Discord bot providing real-time weather updates via the Weather API. Features include optimized performance, scalable architecture, and interactive commands for an enhanced user experience."
-          }
-          link={`https://github.com/codewithsupra/discord-bot`}
-          variant={true}
-        />
-        
-        
-        <ProjectItem
-          name={"NASA Mission Control Application: Interstellar Launch Management System"}
+  <ProjectItem
+    name={"SmartImageAI"}
+    description={
+      "A full-stack React app leveraging DALL-E for AI-based image generation. Features include user authentication, a ranking system, and responsive design."
+    }
+    link={`https://smartimageai.onrender.com/`}
+    logo={face}  // Correct image logo
+  />
 
-          description={
-            " Full-stack application built with Node.js, React, and MongoDB to schedule and manage interstellar launches. Features include a responsive UI, RESTful APIs, Docker containerization, and CI/CD pipelines. Ensures scalability and reliability with comprehensive testing and 99.9% uptime. "
-          }
-          variant={true}
-          link={`https://github.com/codewithsupra/nasa-project`}
-        />
-        <ProjectItem
-          name={"ChatBotPro"}
-          description={
-            " Developed a Nuxt.js-based ChatBot with TypeScript, leveraging the OpenAI Assistants API for advanced NLP capabilities. Features include a responsive UI, high accuracy in query resolution, and scalable deployment to handle thousands of users. "
-          }
-          variant={true}
-          
-        />
-      </Body>
+  <ProjectItem
+    name={"VoiceBased-Web-Browser"}
+    description={
+      "A voice-controlled web browser, designed for accessibility, enabling web navigation through speech input."
+    }
+    link={`https://github.com/codewithsupra/VoiceBased-Web-Browser`}
+    logo={voice}
+  />
+
+  <ProjectItem
+    name={"Dog Breed Classifier"}
+    description={
+      "A machine learning project using TensorFlow to classify dog breeds through image uploads."
+    }
+    link={`https://github.com/codewithsupra/Dog-breed-classifier-using-Transfer-Learning-and-TensorFlow`}
+    logo={bm}
+  />
+
+  <ProjectItem
+    name={"FliterAI"}
+    description={
+      "A Vue.js app for applying AI-driven filters to photos, offering real-time image manipulation and a responsive user experience."
+    }
+    link={`https://imagefiltersvue.onrender.com/`}
+    logo={NC}
+  />
+
+  <ProjectItem
+    name={"ShopMania"}
+    description={
+      "A full-stack e-commerce platform built with React, Redux, Firebase, and Stripe API. It features user authentication, payment integration, and a responsive UI."
+    }
+    link={`https://clothing-store-u4i8.onrender.com/`}
+    logo={Bloxx}
+  />
+
+  <ProjectItem
+    name={"Discord Weather Bot"}
+    description={
+      "A Node.js-based Discord bot offering real-time weather updates via the Weather API."
+    }
+    link={`https://github.com/codewithsupra/discord-bot`}
+    logo={weather}
+  />
+
+  <ProjectItem
+    name={"NASA Mission Control Application"}
+    description={
+      "Full-stack app built with Node.js, React, and MongoDB for managing interstellar launches, featuring RESTful APIs, Docker, and CI/CD pipelines."
+    }
+    link={`https://github.com/codewithsupra/nasa-project`}
+    logo={nasaicon}
+  />
+
+  <ProjectItem
+    name={"ChatBotPro"}
+    description={
+      "A Nuxt.js-based chatbot leveraging OpenAI API for advanced NLP capabilities, with high accuracy and scalable deployment."
+    }
+    logo={chatbot}
+  />
+
+  <ProjectItem
+    name={"Pong Game"}
+    description={"A JavaScript-based Pong game where users can play this retro-style game in the browser."}
+    link={`https://codewithsupra.github.io/Pong-game/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Math Quiz"}
+    description={"A math quiz app built with JavaScript that generates random questions and checks answers in real-time."}
+    link={`https://codewithsupra.github.io/Math-Quiz/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Paint.js"}
+    description={"A browser-based paint app built with JavaScript, allowing users to create sketches and digital art."}
+    link={`https://codewithsupra.github.io/Paint.js/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Spock Rock Game"}
+    description={"A fun Star Trek-inspired Spock-Rock game built with JavaScript for browser-based gameplay."}
+    link={`https://codewithsupra.github.io/Spock-Rock-Game/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"VideoStreamerOffline"}
+    description={"Stream your favorite videos offline directly in the browser."}
+    link={`https://codewithsupra.github.io/VideoStreamerOffline/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Countdown Timer"}
+    description={"A customizable countdown timer built with JavaScript."}
+    link={`https://codewithsupra.github.io/Countdown-Timer/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Web Music Player"}
+    description={"A music player that streams songs offline with weekly updates."}
+    link={`https://codewithsupra.github.io/Web-Music-Player/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"UIDarkMode"}
+    description={"A CSS-based dark-mode portfolio template with sleek, modern design."}
+    link={`https://codewithsupra.github.io/CoolPortfoDarkMode/`}
+    logo={SC}
+  />
+
+  <ProjectItem
+    name={"Joke of the Day"}
+    description={"A daily joke generator app built with JavaScript, allowing users to share jokes with friends."}
+    link={`https://codewithsupra.github.io/Joke-of-the-Day/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Multitasking Streamer"}
+    description={"A Picture-in-Picture web app that allows users to stream videos in a floating window while multitasking."}
+    link={`https://codewithsupra.github.io/Multitasking-Streamer/`}
+    logo={SC}
+  />
+
+  <ProjectItem
+    name={"Quiz Generator with JavaScript"}
+    description={"A dynamic quiz generator app built with JavaScript."}
+    link={`https://codewithsupra.github.io/Quiz-Generator-with-Javascript/`}
+    logo={JS}
+  />
+
+  <ProjectItem
+    name={"Quote Generator"}
+    description={"A stylish quote generator app allowing users to generate and share random quotes."}
+    link={`https://codewithsupra.github.io/Quote-generator/`}
+    logo={JS}
+  />
+</Body>
+
       <Footer>
         <GitLink
           href="https://github.com/codewithsupra"

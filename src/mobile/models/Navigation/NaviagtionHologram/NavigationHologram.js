@@ -1,29 +1,24 @@
 import { Html, useScroll } from "@react-three/drei";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { useFrame, useThree } from "@react-three/fiber";
-import { useEffect } from "react";
-import { useRef } from "react";
 
 export const NavigationHologram = () => {
   const scrollData = useScroll();
-  const htmlRef = useRef();
   const { gl } = useThree();
   const [HandFocused, setHandFocused] = useState(false);
+  const lastScrollOffset = useRef(0);
 
-  // current: gl.domElement.parentNode
-  // current: scrollData.fixed
-
+  // Update only when there's a significant change in scroll position to avoid flickering
   useFrame(() => {
-    // console.log(scrollData);
-    if (scrollData.offset > 0.11 && scrollData.offset < 0.13) {
-      setHandFocused(true);
-    } else {
-      setHandFocused(false);
+    const offset = scrollData.offset;
+
+    // If offset changes by more than a small threshold, update the state
+    if (Math.abs(offset - lastScrollOffset.current) > 0.01) {
+      lastScrollOffset.current = offset;
+      setHandFocused(offset > 0.11 && offset < 0.13);
     }
   });
-  const ScrollHeight = scrollData.el.scrollTop;
-  const ScrollTopNative = 9284 / ScrollHeight;
 
   return (
     <group rotation={[0, 1.3, 0]} position={[-1, 1.5, 0]}>
@@ -34,7 +29,6 @@ export const NavigationHologram = () => {
         portal={{ current: gl.domElement.parentNode }}
       >
         <Container focused={HandFocused.toString()}>
-          {" "}
           <Header>Jump to Section</Header>
           <Body>
             <Item
@@ -56,7 +50,7 @@ export const NavigationHologram = () => {
                 scrollData.el.scrollTop = scrollData.el.scrollTop * 7.5;
               }}
             >
-              <h3>Projects</h3>
+              <h3>Personal Projects</h3>
             </Item>
             <Item
               onClick={() => {
@@ -80,7 +74,7 @@ const Container = styled.div`
   z-index: 1000;
   width: 15rem;
   height: 15rem;
-  background-color: rgba(92, 192, 192, 0.8); 
+  background-color: rgba(92, 192, 192, 0.8);
   box-sizing: border-box;
   padding: 10px;
   transform-origin: bottom;
@@ -96,6 +90,7 @@ const Container = styled.div`
   background-size: cover;
   color: grey;
 `;
+
 const Header = styled.h2`
   color: white;
   font-size: 14px;
@@ -128,3 +123,4 @@ const Item = styled.div`
     margin: 0;
   }
 `;
+

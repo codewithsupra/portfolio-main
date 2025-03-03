@@ -13,6 +13,10 @@ import voice from "../../../../images/projectLogos/voice.png";
 import weather from "../../../../images/projectLogos/weather.jpeg"
 import nasaicon from "../../../../images/projectLogos/download.jpeg";
 import chatbot from "../../../../images/projectLogos/chatbot.jpeg";
+import notes from "../../../../images/projectLogos/notes.jpeg"
+import trainer from "../../../../images/projectLogos/trainer.png"
+import travel from "../../../../images/projectLogos/travel.png"
+import interview from "../../../../images/projectLogos/interview.png"
 import { useFrame } from "@react-three/fiber";
 import { useEffect } from "react";
 import { useRef } from "react";
@@ -46,6 +50,41 @@ export const ScreenHtml = memo(({ Pos }) => {
     link={`https://smartimageai.onrender.com/`}
     logo={face}  // Correct image logo
   />
+  <ProjectItem
+  name={"Deluxe Notes"}
+  description={
+    "Engineered a privacy-focused journal app with Next.js, Clerk, and EdgeStore, featuring end-to-end encryption, real-time sync, and decentralized data storage, reducing load times by 25% while maintaining complete user data ownership."
+  }
+  link={`https://deluxe-notes-app.vercel.app`} // Replace with the actual link
+  logo={notes}
+/>
+
+<ProjectItem
+  name={"AI Travel Assistant"}
+  description={
+    "Built an AI-driven platform delivering real-time, adaptive itineraries, cutting setup time by 30%. Enabled seamless, personalized trips without agency reliance. React, TypeScript, Tailwind, Gemini AI, PostgreSQL."
+  }
+  link={`https://ai-travel-planner-saas.vercel.app`} // Replace with the actual link
+  logo={travel}
+/>
+
+<ProjectItem
+  name={"AceAI Coach"}
+  description={
+    "Launched a platform offering personalized mock interviews with real-time, AI-based assessments, enhancing preparation for 200+ users weekly. Next.js, React, Drizzle ORM, Gemini AI, Clerk."
+  }
+  link={`https://mock-interview-ai-assistant.vercel.app`} // Replace with the actual link
+  logo={interview}
+/>
+
+<ProjectItem
+  name={"LangQuest"}
+  description={
+    "Pioneered a language-learning platform offering real-world conversation simulations and adaptive learning via voice input, boosting daily users by 40%. Next.js, React, Redux, Shadcn/ui, ElevenLabs."
+  }
+  link={`https://lang-quest-app.vercel.app/`} // Replace with the actual link
+  logo={trainer}
+/>
 
   <ProjectItem
     name={"VoiceBased-Web-Browser"}

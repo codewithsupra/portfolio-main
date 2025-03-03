@@ -77,10 +77,10 @@ export const ProfileText = ({ opacity }) => {
     </h2>
     <ul style={{ fontSize: '2.2rem', lineHeight: '1.6' }}>
       <li>
-        <strong>Prize Winning Developer:</strong> Awarded top honors at Vrijie University Startup Hub for pioneering integration of healthcare with software development and AI.
+        <strong>Prize Winning Developer:</strong> Awarded top honors at Vrijie University Hackathon for pioneering integration of healthcare with software development and AI.
       </li>
       <li>
-        <strong>Open Source Contributor:</strong> Contributed to several high-profile open-source projects in ZTM and  repositories, enhancing functionality and fixing critical bugs.
+        <strong>Open Source Contributor:</strong> Contributed to several high-profile open-source projects in ZTM and JavaScript repositories, enhancing functionality and fixing critical bugs.
       </li>
       <li>
         <strong>Certifications:</strong> Certified in AWS Cloud Practitioner, enhancing my ability to design and deploy scalable cloud solutions.

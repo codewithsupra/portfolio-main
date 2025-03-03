@@ -12,8 +12,6 @@ import ReactNativeIcon from "../../../../images/skillImages/reactNative.png";
 import NextIcon from "../../../../images/skillImages/Next.png";
 import pyicon from "../../../../images/skillImages/pythonicon.jpeg";
 import aws from "../../../../images/skillImages/aws.png";
-import BlenderIcon from "../../../../images/skillImages/blender.png";
-import PhotoshopIcon from "../../../../images/skillImages/photoshop.png";
 import go from "../../../../images/skillImages/go.png";
 import sql from "../../../../images/skillImages/download.png";
 import node from "../../../../images/skillImages/node.png"
